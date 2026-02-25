@@ -1,0 +1,62 @@
+.listForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 10px;
+  flex-wrap: wrap;
+  
+  .fieldLabel {
+    margin-right: 5px;
+    font-weight: 500;
+    color: white;
+    white-space: nowrap;
+  }
+  
+  .textInput {
+    width: 150px;
+    
+    input {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: border-color 0.3s;
+      
+      &:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+    }
+  }
+  
+  .formButton {
+    margin-left: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    
+    .fieldLabel {
+      margin-right: 0;
+      margin-bottom: 4px;
+    }
+    
+    .textInput {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .formButton {
+      margin-left: 0;
+      margin-top: 5px;
+      width: 100%;
+    }
+  }
+}
