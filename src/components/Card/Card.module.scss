@@ -13,11 +13,18 @@
     color:black;
 }
 
-.iconButton{
-    background: none;
-    border:none;
+.buttonsWrapper {
+    display: flex;
+    gap: 5px;
+    margin-left: auto;
 }
 
-.added{
-    color:#daa520;
+.iconButton, .deleteButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.added {
+    color: #daa520;
 }
